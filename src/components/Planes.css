@@ -5,7 +5,7 @@
 }
 
 /*Contenedor de las tarjetas*/
-.container{
+.container-planes{
   padding:2rem 1rem 2rem 1rem;
   background-color: #96969650;
   display: grid;

@@ -18,7 +18,7 @@ const Planes = ()=>{
 
   return(
     <>
-      <div className="container">
+      <div className="container-planes">
           {planes.map((item) =>
             <>
                 <div className="card">
