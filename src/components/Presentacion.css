@@ -1,0 +1,67 @@
+.container-presentacion{
+   color:orange;
+   background: rgb(0,0,0);
+   background: linear-gradient(90deg, rgba(0,0,0,1) 3%, rgba(15,20,28,1) 33%, rgba(26,37,50,1) 50%, rgba(15,20,28,1) 69%, rgba(0,0,0,1) 97%);
+   height:400px;
+}
+
+.estrellas ul{
+  display: flex;
+   /*Organia empezando en la derecha*/
+  padding:0
+}
+.estrellas ul li{;
+  position: absolute;
+  top:63%;
+  align-items: flex-end;
+  /*Tamaño de las estrellas*/
+  width:8px;
+  height:8px;
+  border-radius: 100%;
+  background:#FFFFFF;
+  list-style: none; /*Elimina el punto negro de la lista*/
+
+  /*Animacion*/
+  animation: animarEstrellas 4s linear infinite;
+
+}
+
+.estrellas ul li:nth-child(1){
+  width:1px;
+  height:1px;
+}
+.estrellas ul li:nth-child(2){
+  width:1px;
+  height:1px;
+  margin-left:10%;
+  top:50%;
+}
+.estrellas ul li:nth-child(3){
+  width:1px;
+  height:1px;
+  margin-left:20%;
+  top:50%;
+}
+.estrellas ul li:nth-child(4){
+  width:1px;
+  height:1px;
+  margin-left:30%;
+  top:50%;
+}
+.estrellas ul li:nth-child(5){
+  width:1px;
+  height:1px;
+  margin-left:40%;
+  top:50%;
+}
+.estrellas ul li:nth-child(6){
+  width:1px;
+  height:1px;
+  margin-left:50%;
+  top:50%;
+}
+
+@keyframes animarEstrellas{
+  0% {top:63%}
+  100%{top:10%} /*Mas arriba*/
+}

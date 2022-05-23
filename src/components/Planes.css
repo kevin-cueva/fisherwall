@@ -19,6 +19,7 @@
 
 /*Para darle el estilo a cada carta*/
 .card{
+    min-height:60vh;
     padding: 5px;
     background-color: #131417;
     border-radius: 5px;

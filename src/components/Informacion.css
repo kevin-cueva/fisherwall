@@ -1,0 +1,17 @@
+.container-informacion{
+  min-height: 30vh;
+  padding:1rem 1rem 1rem 1rem;
+  display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense; /*Coloque elementos para llenar los agujeros en la cuadrícula*/
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(auto-fit, minmax(min(50%, 15rem), 1fr));
+}
+
+.infor-centrado{
+  /*Centrado del bloque*/
+  display:flex;
+  text-align: center;
+  justify-content: center;
+  border:1px solid black;
+}

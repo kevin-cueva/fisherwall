@@ -1,0 +1,12 @@
+.container-info-empresas{
+  margin: 10px;
+  background-color:#00000040;
+  min-height: 30vh;
+  padding:1rem 1rem 1rem 1rem;
+  display: grid;
+    gap: 1rem;
+    grid-auto-flow: dense; /*Coloque elementos para llenar los agujeros en la cuadrícula*/
+}
+.cart-empresas{
+  border:1px solid black;
+}
