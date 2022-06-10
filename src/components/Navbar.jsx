@@ -1,28 +1,25 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import NavbarCompleto from './NavbarCompleto';
 import './Navbar.css';
 const Navbar = ()=>{
+const [tamPantallaUse, setTamPantallaUse] = useState(document.documentElement.clientWidth);
+//Funcion para obtener el tamaño de la pantalla
+const tamPantalla = ()=>{
+  //evento que se activa si la pantalla cambia de tamaño
+  window.onresize = function (){
+        // Obtenemos la posicion del scroll en pantall
+        setTamPantallaUse(document.documentElement.clientWidth);
+    }
+    return scroll;
+}
+
 
   return(
     <>
-
-      <div className="container-navbar">
-          <div className="nombre-empresa"><Link to="/fisherwall">Fisherwall</Link></div>
-          <div className="elementos-navbar">
-              <ul className="ul-navbar">
-                <li className="li-navbar">Soluciones</li>
-                <li className="li-navbar">¿ Por qué Fisherwall ?</li>
-                <li className="li-navbar">Blog</li>
-                <li className="li-navbar">Talentos</li>
-              </ul>
-          </div>
-          <div className="persona-empresa">
-            <ul className="ul-navbar">
-              <li className="li-navbar"><Link to="/fisherwall/personas">Personas</Link></li>
-              <li className="li-navbar"><Link to="/fisherwall/empresas">Empresas</Link></li>
-            </ul>
-          </div>
-      </div>
+      {tamPantalla()}
+      {tamPantallaUse>900 ?  <NavbarCompleto></NavbarCompleto>:<div>adios</div>}
 
     </>
   );
