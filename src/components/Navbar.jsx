@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import NavbarCompleto from './NavbarCompleto';
+import NavbarCel from './NavbarCel';
 import './Navbar.css';
 const Navbar = ()=>{
 const [tamPantallaUse, setTamPantallaUse] = useState(document.documentElement.clientWidth);
@@ -19,7 +20,7 @@ const tamPantalla = ()=>{
   return(
     <>
       {tamPantalla()}
-      {tamPantallaUse>900 ?  <NavbarCompleto></NavbarCompleto>:<div>adios</div>}
+      {tamPantallaUse>900 ?  <NavbarCompleto></NavbarCompleto>:<NavbarCel></NavbarCel>}
 
     </>
   );
