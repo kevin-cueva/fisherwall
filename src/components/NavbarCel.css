@@ -1,52 +1,63 @@
 .icono-menu{
-    margin:0px 0px;
-    position:relative;
-    z-index: 10;
-    color: white;
-    background-color: white;
-  }
-  
-  /*estilo para el menu*/
-  .icono-menu img{
-    vertical-align: top;
-    width: 50px;
-    cursor:pointer;
-    color: white;
-  }
-  
-  /*Estilo para el contenedor del menu*/
-  
-  .contenido-menu{
-    background-color: rgb(42,42,42);
-    box-shadow: 0px 0px 5px 0px rgb(66,66,66);
-    width:100%;
-    position:absolute;
-    margin-top: 80px;
-    left:0;
-    top:0;
-    transition: all .5s ease;
-  }
-  /*Estilo para el listado del menu*/
-  .no-mostrar-menu{
-    padding: 100px 0px 20px 0px;
-    list-style:none;
-    display:none; /*Para que desaparezca*/
-  }
-  .mostrar-menu{
-    display:block; /*Para que desaparezca*/
-  }
-  
-  .contenido-menu ul li{
-    color:white;
-    display:block;
-    font-size: 2rem;
-    text-decoration: none;
-    padding:0px 30px;
-    cursor:pointer;
-  }
-  
-  .contenido-menu ul li:hover{
-    background-color:#96169650;
-    color:yellow;
-  }
-  
+  margin:0px 0px;
+  position:relative;
+  z-index: 10;
+  color: white;
+  background-color: white;
+}
+
+/*estilo para el menu*/
+.icono-menu img{
+  vertical-align: top;
+  width: 50px;
+  cursor:pointer;
+  color: white;
+}
+
+/*Estilo para el contenedor del menu*/
+
+.contenido-menu{
+  background-color: rgb(42,42,42);
+  box-shadow: 0px 0px 5px 0px rgb(66,66,66);
+  width:100%;
+  position:absolute;
+  margin-top: 80px;
+  left:0;
+  top:0;
+  transition: all .5s ease;
+}
+/*Estilo para el listado del menu*/
+.no-mostrar-menu{
+  padding: 100px 0px 20px 0px;
+  list-style:none;
+  transition: all .5s ease;
+  display:none; /*Para que desaparezca*/
+}
+.mostrar-menu{
+  display:block; /*Para que desaparezca*/
+  animation-name: contenidoMenu;
+  animation-duration: 800ms;
+}
+@keyframes contenidoMenu {
+  0% {margin-left: 100%;}
+  100%{margin-left: 0%;}
+}
+
+.contenido-menu ul{
+  padding:0;
+  margin: 0;
+}
+.contenido-menu ul li{
+  padding: 5px 0 5px 0;
+}
+.contenido-menu ul li a{
+  color:white;
+  font-size: 1.3rem;
+  text-decoration: none;
+  padding-left: 10px;
+  cursor:pointer;
+}
+.contenido-menu ul li a:hover{
+  color:#F15412;
+  font-size:1.4rem;
+}

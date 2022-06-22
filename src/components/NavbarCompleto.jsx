@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './NavbarCompleto.css'
 const NavbarCompleto =()=>{
   return(
-    <div className="container-navbar">
+    <div className="container-navbar container-navbarCompleto">
         <div className="nombre-empresa"><Link to="/fisherwall">Fisherwall</Link></div>
         <div className="elementos-navbar">
             <ul className="ul-navbar">

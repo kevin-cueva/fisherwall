@@ -1,0 +1,23 @@
+    
+  .container-navbarCompleto a:hover{
+    color:#F15412;
+  }
+  .container-navbarCompleto a{
+    text-decoration: none;
+    color: #EEE;
+  }
+  .ul-navbar{
+    align-content: flex-start;
+    display: flex;
+    flex-direction: row; /*acomoda todo de manera horizontal*/
+    justify-content: center; /*Organia la lisha hacia el centro*/
+    text-align: center; /*Organia la lisha hacia el centro*/
+}
+
+  .li-navbar{
+    padding-right: 3rem;
+    list-style: none; /*Elimina el punto negrp de la lista*/
+    font-weight:bolder;
+    color:#EEEEEE;
+    font-size:0.9rem;
+  }

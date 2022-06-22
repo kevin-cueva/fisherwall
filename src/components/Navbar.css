@@ -1,3 +1,4 @@
+/* Acomoda el navbar de manera horizontal */
 .container-navbar{
   background-color:#111111;
   display: flex;
@@ -6,33 +7,4 @@
   padding: 1rem;
   border-bottom:1px solid #222222;
 
-}
-.container-navbar a{
-  color:#EEEEEE;
-  text-decoration:none;
-  font-size:1.3rem;
-  font-weight:bolder;
-  font-family: sans-serif;
-}
-.container-navbar a:hover{
-  color:#F15412;
-}
-
-.ul-navbar{
-    align-content: flex-start;
-    display: flex;
-    flex-direction: row; /*acomoda todo de manera horizontal*/
-    justify-content: center; /*Organia la lisha hacia el centro*/
-    text-align: center; /*Organia la lisha hacia el centro*/
-}
-
-.li-navbar{
-  padding-right: 3rem;
-  list-style: none; /*Elimina el punto negrp de la lista*/
-  font-weight:bolder;
-  color:#EEEEEE;
-  font-size:0.9rem;
-}
-.persona-empresa a{
-  font-size:1.1rem;
 }
